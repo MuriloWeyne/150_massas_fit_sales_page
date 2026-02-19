@@ -389,12 +389,12 @@ export default function PastaFitLanding() {
                 <p className="text-gray-500 text-sm mt-2">Pagamento único</p>
               </div>
 
-              <button
-                onClick={() => window.open('https://pay.cakto.com.br/suvqbeu_745128' + window.location.search, '_self')}
+              <a
+              href={'https://pay.cakto.com.br/suvqbeu_745128' + window.location.search}
                 className="w-full animated-gradient text-white font-bold py-4 px-6 rounded-full text-base md:text-lg transition-all shadow-lg mb-4 flex items-center justify-center"
               >
                 COMPRAR AGORA!
-              </button>
+              </a>
 
               <div className="flex items-center justify-center gap-3 text-xs text-gray-500">
                 <div className="flex items-center gap-1">
@@ -450,12 +450,12 @@ export default function PastaFitLanding() {
                 <p className="text-gray-500 text-sm mt-2">Pagamento único</p>
               </div>
 
-              <button
-                onClick={() => window.open('https://pay.cakto.com.br/qrqqwmj_745141' + window.location.search, '_self')}
+              <a
+              href={'https://pay.cakto.com.br/qrqqwmj_745141' + window.location.search}
                 className="w-full animated-gradient text-white font-bold py-4 px-6 rounded-full text-base md:text-lg transition-all shadow-lg mb-4 flex items-center justify-center"
               >
                 COMPRAR AGORA!
-              </button>
+              </a>
 
               <div className="flex items-center justify-center gap-3 text-xs text-white">
                 <div className="flex items-center gap-1">
