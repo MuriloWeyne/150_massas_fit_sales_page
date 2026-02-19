@@ -59,7 +59,7 @@ export default function PastaFitLanding() {
       <header className="container mx-auto px-4 py-4 md:py-6 text-center">
         <div className="max-w-2xl mx-auto">
           <h1 className="text-2xl md:text-4xl animated-gradient-text font-bold py-1 mb-8">
-            150 Receitas de Macarrão Fitness<br />
+            150 Receitas de Massas Fitness<br />
             <span className="text-xl md:text-3xl">Práticas e Econômicas</span>
           </h1>
 
@@ -69,15 +69,15 @@ export default function PastaFitLanding() {
               PROMOÇÃO
             </div>
             <img
-              src="https://i.imgur.com/UCQjYlK.jpeg"
-              alt="150 Receitas de Macarrão Fit"
+              src="https://i.imgur.com/hnjiXQM.jpeg"
+              alt="150 Receitas de Massas Fit"
               className="w-full max-w-sm md:max-w-md mx-auto rounded-xl"
             />
           </div>
 
           <p className="text-sm md:text-base text-orange-500 font-bold mb-3">
             Cansado de Comer Frango com Batata Doce Todo Dia?<br />
-            Descubra Como Comer Macarrão Delicioso Sem Sair da Dieta!
+            Descubra Como Comer Massas Deliciosas Sem Sair da Dieta!
           </p>
 
           {/* Price Section */}
@@ -85,7 +85,7 @@ export default function PastaFitLanding() {
             <p className="text-red-400 font-bold line-through text-base">De R$97,00</p>
             <p className="text-gray-600 text-sm">por apenas</p>
             <p className="text-5xl md:text-6xl font-black text-green-500 mt-1">
-              R$16
+              R$29,90
             </p>
           </div>
 
@@ -104,61 +104,22 @@ export default function PastaFitLanding() {
       <section className="py-10 md:py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 animated-gradient-text">
-            O Que Você Vai Receber:
+            Sobre o Nosso Material
           </h2>
 
           {/* Benefits Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+          <div className="grid grid-cols-2 gap-4 mb-12">
             {[
-              {
-                icon: '🍝',
-                title: '150 Receitas Diferentes',
-                desc: 'Nunca mais repetir o mesmo prato. Variedade para 5 meses comendo diferente todo dia!'
-              },
-              {
-                icon: '📸',
-                title: 'Fotos Reais de Cada Receita',
-                desc: 'Veja exatamente como o prato deve ficar. Sem surpresas, sem frustrações.'
-              },
-              {
-                icon: '👨‍🍳',
-                title: 'Passo a Passo Ilustrado',
-                desc: 'Mesmo quem nunca cozinhou consegue fazer. Instruções claras e simples.'
-              },
-              {
-                icon: '📊',
-                title: 'Informações Nutricionais Completas',
-                desc: 'Calorias, proteínas, carboidratos e gorduras de cada receita. Bata seus macros com precisão!'
-              },
-              {
-                icon: '⚡',
-                title: 'Preparos Rápidos',
-                desc: 'Maioria das receitas pronta em 15-25 minutos. Perfeito para quem tem rotina corrida.'
-              },
-              {
-                icon: '💰',
-                title: 'Economia Garantida',
-                desc: 'Ingredientes acessíveis que você encontra em qualquer mercado. Sem gastar fortuna em "comida fit".'
-              },
-              {
-                icon: '🎯',
-                title: 'Para Todos os Objetivos',
-                desc: 'Receitas para emagrecimento, ganho de massa, manutenção e pré-treino. Você escolhe!'
-              },
-              {
-                icon: '✅',
-                title: 'Aprovado por Nutricionista',
-                desc: 'Todas as receitas desenvolvidas pela Nutri Sofia Campos. Saúde e sabor garantidos!'
-              }
+              { icon: '🍝', title: '150 Receitas Diferentes' },
+              { icon: '👨‍🍳', title: 'Passo a Passo Completo' },
+              { icon: '📊', title: 'Infos Nutricionais Completas' },
+              { icon: '⚡', title: 'Preparos Rápidos' },
+              { icon: '💰', title: 'Economia Garantida' },
+              { icon: '✅', title: 'Criado por Equipe de Especialistas' }
             ].map((benefit, idx) => (
-              <div key={idx} className="bg-gradient-to-br from-orange-50 to-yellow-50 p-5 rounded-xl shadow-md hover:shadow-lg transition-shadow border border-orange-100">
-                <div className="flex items-start gap-4">
-                  <span className="text-3xl">{benefit.icon}</span>
-                  <div>
-                    <h3 className="font-bold text-gray-800 text-lg mb-1">{benefit.title}</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">{benefit.desc}</p>
-                  </div>
-                </div>
+              <div key={idx} className="bg-gradient-to-br from-orange-50 to-yellow-50 p-4 rounded-xl shadow-md hover:shadow-lg transition-shadow border border-orange-100 flex items-center gap-3">
+                <span className="text-2xl flex-shrink-0">{benefit.icon}</span>
+                <h3 className="font-bold text-gray-800 text-sm md:text-base leading-tight">{benefit.title}</h3>
               </div>
             ))}
           </div>
@@ -170,7 +131,7 @@ export default function PastaFitLanding() {
               ✅ GARANTIA INCONDICIONAL DE 7 DIAS
             </h3>
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Experimente as receitas por <strong>7 dias completos</strong>. Se não ficar satisfeito por <strong>QUALQUER motivo</strong>, devolvemos 100% do seu dinheiro.
+              Experimente as receitas por <strong>7 dias completos</strong>. Se não ficar satisfeita por <strong>QUALQUER motivo</strong>, devolvemos 100% do seu dinheiro.
             </p>
             <p className="text-gray-600 mb-4">
               Sem perguntas. Sem burocracia. Sem complicação.
@@ -191,17 +152,17 @@ export default function PastaFitLanding() {
           </h2>
 
           {/* Errors List */}
-          <div className="space-y-3 mb-10">
+          <div className="grid grid-cols-2 gap-4 mb-10">
             {[
-              'Come sempre frango com batata doce e enjoa em 2 semanas',
-              'Cortou macarrão por achar que engorda',
-              'Gasta uma fortuna com comida "fit" cara',
-              'Não tem tempo para preparar refeições saudáveis',
-              'Sente culpa quando come o que gosta'
+              { icon: '🔄', text: 'Pouca Variedade' },
+              { icon: '🚫', text: 'Cortar Massas' },
+              { icon: '💰', text: 'Gastos com Comida "Fit"' },
+              { icon: '⏰', text: 'Falta de Tempo' },
+              { icon: '😔', text: 'Sente Culpa' }
             ].map((error, idx) => (
-              <div key={idx} className="flex items-start gap-3 bg-red-50 p-3 rounded-lg border-l-4 border-red-400">
-                <span className="text-red-500 font-bold text-lg">✗</span>
-                <p className="text-gray-700">{error}</p>
+              <div key={idx} className="flex items-center gap-3 bg-red-50 p-4 rounded-xl border border-red-100 shadow-sm">
+                <span className="text-2xl flex-shrink-0">{error.icon}</span>
+                <p className="text-red-700 font-bold text-sm md:text-base leading-tight">{error.text}</p>
               </div>
             ))}
           </div>
@@ -212,21 +173,21 @@ export default function PastaFitLanding() {
           </h3>
 
           <p className="text-center text-lg font-bold text-gray-800 mb-6">
-            Macarrão fitness pode (e <span className="text-orange-500">DEVE</span>) fazer parte da sua dieta!
+            Massas fitness podem (e <span className="text-orange-500">DEVEM</span>) fazer parte da sua dieta!
           </p>
 
           {/* Solutions List */}
-          <div className="space-y-3 mb-8">
+          <div className="grid grid-cols-2 gap-4 mb-8">
             {[
-              { title: 'Variedade TODO DIA', desc: '150 receitas diferentes, nunca repetir' },
-              { title: 'Economia Real', desc: 'Ingredientes acessíveis que você encontra em qualquer mercado' },
-              { title: 'Rapidez', desc: 'Preparos em 15-20 minutos' },
-              { title: 'Prazer Sem Culpa', desc: 'Coma macarrão delicioso e continue na dieta' },
-              { title: 'Resultados Mais Rápidos', desc: 'Dieta sustentável = você não desiste' }
+              { icon: '✨', title: 'Variedade Diária' },
+              { icon: '💰', title: 'Economia Real' },
+              { icon: '⚡', title: 'Preparo Rápido' },
+              { icon: '😋', title: 'Prazer Sem Culpa' },
+              { icon: '🚀', title: 'Resultados Reais' }
             ].map((solution, idx) => (
-              <div key={idx} className="flex items-start gap-3 bg-green-50 p-3 rounded-lg border-l-4 border-green-500">
-                <span className="text-green-500 font-bold text-lg">•</span>
-                <p className="text-gray-700"><strong className="text-gray-800">{solution.title}</strong> - {solution.desc}</p>
+              <div key={idx} className="flex items-center gap-3 bg-green-50 p-4 rounded-xl border border-green-100 shadow-sm">
+                <span className="text-2xl flex-shrink-0">{solution.icon}</span>
+                <p className="text-green-700 font-bold text-sm md:text-base leading-tight">{solution.title}</p>
               </div>
             ))}
           </div>
@@ -252,12 +213,12 @@ export default function PastaFitLanding() {
 
           <div className="grid grid-cols-2 gap-4 mb-8">
             {[
-              { name: 'Macarrão Integral com Carne Moída Fit', cal: 440, img: 'https://i.imgur.com/HoFmYBj.jpeg' },
-              { name: 'Macarrão com Legumes e Ovo', cal: 370, img: 'https://i.imgur.com/o57nxJu.jpeg' },
+              { name: 'Massa Integral com Carne Moída Fit', cal: 440, img: 'https://i.imgur.com/HoFmYBj.jpeg' },
+              { name: 'Massa com Legumes e Ovo', cal: 370, img: 'https://i.imgur.com/o57nxJu.jpeg' },
               { name: 'Spaghetti Carbonara Fit', cal: 360, img: 'https://i.imgur.com/RhgLcS4.jpeg' },
-              { name: 'Macarrão Cremoso com Frango', cal: 420, img: 'https://i.imgur.com/dsT1T79.jpeg' },
+              { name: 'Massa Cremosa com Frango', cal: 420, img: 'https://i.imgur.com/dsT1T79.jpeg' },
               { name: 'Penne com Molho Pesto Fitness', cal: 430, img: 'https://i.imgur.com/FMpOS1G.jpeg' },
-              { name: 'Macarrão com Molho de Queijos', cal: 390, img: 'https://i.imgur.com/rmfllwM.jpeg' },
+              { name: 'Massa com Molho de Queijos', cal: 390, img: 'https://i.imgur.com/rmfllwM.jpeg' },
               { name: 'Lasanha Fit de Frigideira', cal: 450, img: 'https://i.imgur.com/IQaNXop.jpeg' },
               { name: 'Lasanha de Queijo com Berinjela', cal: 400, img: 'https://i.imgur.com/40TNG7f.jpeg' }
             ].map((recipe, idx) => (
@@ -284,7 +245,7 @@ export default function PastaFitLanding() {
               onClick={scrollToOffer}
               className="w-full max-w-md mx-auto animated-gradient text-white font-bold py-4 px-8 rounded-full text-lg transition-transform transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
             >
-              🍝 QUERO COMER MACARRÃO SEM CULPA!
+              🍝 QUERO COMER MASSAS SEM CULPA!
             </button>
           </div>
         </div>
@@ -300,22 +261,22 @@ export default function PastaFitLanding() {
           <div className="space-y-4 mb-8">
             {[
               {
-                title: '30 Molhos Fit para as Massas',
-                description: 'Molhos cremosos, leves e saborosos que transformam qualquer macarrão em uma refeição fitness completa.',
+                title: '50 Saladas Fit',
+                description: '50 Receitas de Saladas fit separadas por categorias para qualquer situação no seu dia a dia.',
                 value: 'R$47',
-                img: 'https://i.imgur.com/o0IEZIx.png'
+                img: 'https://i.imgur.com/ezNk6mR.jpeg'
               },
               {
-                title: 'Meal Prep de 4 Semanas',
-                description: 'Planejamento completo para preparar suas marmitas de macarrão fit da semana toda em poucas horas.',
+                title: '30 Lanches Fit',
+                description: '30 Receitas de Lanches Fit de pré e pós-treino, snacks noturnos e refeições rápidas para salvar a dieta.',
                 value: 'R$39',
-                img: 'https://i.imgur.com/UogvUcy.png'
+                img: 'https://i.imgur.com/jGNeXmU.jpeg'
               },
               {
-                title: 'Guia de Substituições e Macros',
-                description: 'Aprenda a calcular os macronutrientes de cada substituição e quais ingredientes utilizar sem perder o sabor.',
+                title: '20 Sobremesas Fit',
+                description: 'Receitas de sobremesas saudáveis para comer depois de preparar uma massa deliciosa.',
                 value: 'R$37',
-                img: 'https://i.imgur.com/AsFgTH2.png'
+                img: 'https://i.imgur.com/bwjmPln.jpeg'
               }
             ].map((bonus, idx) => (
               <div key={idx} className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
@@ -354,82 +315,27 @@ export default function PastaFitLanding() {
             Garanta Seu Acesso Agora:
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            {/* Basic Offer - Left Column */}
-            <div className="bg-white rounded-3xl shadow-xl p-6 md:p-8 transition-all border-2 border-gray-200 hover:shadow-2xl">
-              <div className="text-center mb-6">
-                <span className="inline-block bg-gray-100 text-gray-700 px-4 py-1 rounded-full text-sm font-bold mb-3">
-                  🎯 OFERTA BÁSICA
-                </span>
-              </div>
-
-              <div className="space-y-3 mb-8">
-                {[
-                  'Guia 150 Receitas de Macarrão Fit',
-                  'Guia de Ingredientes Essenciais',
-                  'Lista de Compras Básica',
-                  'Entrega imediata por e-mail',
-                  'Acesso vitalício',
-                ].map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-700 font-medium text-sm">{item}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="bg-gray-50 p-5 rounded-2xl mb-6 text-center">
-                <div className="flex items-center justify-center gap-3 mb-2">
-                  <span className="text-gray-400 line-through text-lg">De R$97</span>
-                  <span className="bg-green-500 text-white px-3 py-1 rounded-full font-bold text-sm">-83%</span>
-                </div>
-                <div className="flex items-baseline justify-center gap-1">
-                  <span className="text-4xl md:text-5xl font-black text-green-600">R$16</span>
-                </div>
-                <p className="text-gray-500 text-sm mt-2">Pagamento único</p>
-              </div>
-
-              <a
-              href={'https://pay.cakto.com.br/suvqbeu_745128' + window.location.search}
-                className="w-full animated-gradient text-white font-bold py-4 px-6 rounded-full text-base md:text-lg transition-all shadow-lg mb-4 flex items-center justify-center"
-              >
-                COMPRAR AGORA!
-              </a>
-
-              <div className="flex items-center justify-center gap-3 text-xs text-gray-500">
-                <div className="flex items-center gap-1">
-                  <Shield className="w-4 h-4" />
-                  <span>Compra Segura</span>
-                </div>
-                <span>|</span>
-                <div className="flex items-center gap-1">
-                  <Check className="w-4 h-4" />
-                  <span>Garantia 7 dias</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Complete Offer - Right Column */}
+          <div className="max-w-xl mx-auto">
+            {/* Complete Offer - Single Column */}
             <div className="bg-gradient-to-br from-orange-500 to-red-500 rounded-3xl shadow-2xl p-6 md:p-8 transform hover:scale-[1.02] transition-all border-4 border-yellow-400 relative">
               {/* Popular Badge */}
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                 <span className="bg-yellow-400 text-gray-900 px-4 py-1.5 rounded-full text-sm font-bold shadow-lg">
-                  ⭐ MAIS POPULAR
+                  ⭐ OFERTA COMPLETA
                 </span>
               </div>
 
               <div className="text-center mb-6 mt-2">
-                <h3 className="text-xl md:text-2xl font-bold text-white">🚀 SUPER OFERTA COMPLETO</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-white">🚀 GUIA 150 RECEITAS + BÔNUS</h3>
               </div>
 
               <div className="space-y-3 mb-8">
                 {[
-                  'Guia 150 Receitas de Macarrão Fit',
-                  'Lista de compras',
+                  'Guia 150 Receitas de Massas Fit',
                   'Entrega imediata por e-mail',
-                  'Bônus 1: 30 Molhos Fit para as Massas',
-                  'Bônus 2: Meal Prep de 4 Semanas com as Receitas',
-                  'Bônus 3: Guia de Substituições e Macros das Receitas',
+                  'Bônus 1: 50 Saladas Fit',
+                  'Bônus 2: 30 Lanches Fit',
+                  'Bônus 3: 20 Sobremesas Fit',
                   'Acesso vitalício',
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
@@ -442,16 +348,16 @@ export default function PastaFitLanding() {
               <div className="bg-white p-5 rounded-2xl mb-6 text-center">
                 <div className="flex items-center justify-center gap-3 mb-2">
                   <span className="text-gray-400 line-through text-lg">De R$220</span>
-                  <span className="bg-red-600 text-white px-3 py-1 rounded-full font-bold text-sm">-88%</span>
+                  <span className="bg-red-600 text-white px-3 py-1 rounded-full font-bold text-sm">-86%</span>
                 </div>
                 <div className="flex items-baseline justify-center gap-1">
-                  <span className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600 floating">R$27</span>
+                  <span className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600 floating">R$29,90</span>
                 </div>
                 <p className="text-gray-500 text-sm mt-2">Pagamento único</p>
               </div>
 
               <a
-              href={'https://pay.cakto.com.br/qrqqwmj_745141' + window.location.search}
+                href={'https://pay.cakto.com.br/qrqqwmj_745141' + window.location.search}
                 className="w-full animated-gradient text-white font-bold py-4 px-6 rounded-full text-base md:text-lg transition-all shadow-lg mb-4 flex items-center justify-center"
               >
                 COMPRAR AGORA!
@@ -485,37 +391,30 @@ export default function PastaFitLanding() {
               {
                 name: 'Maria Silva',
                 time: '2h',
-                text: 'Eu AMAVA macarrão mas tinha cortado da dieta. Agora como quase todo dia e ainda perdi 3kg no primeiro mês! As receitas são maravilhosas 😍',
+                text: 'Até a minha nutricionista achava que massa não cabia na dieta. Felizmente conheci a Equipe Massas Fit e agora consigo encaixar massas deliciosas na minha alimentação!',
                 likes: 23,
-                image: 'https://i.pravatar.cc/150?img=5'
+                image: 'https://i.imgur.com/abbRbOam.png'
               },
               {
                 name: 'João Santos',
                 time: '5h',
-                text: 'Cara, que receitas incríveis! Sempre achei que macarrão engordava. Agora como no pós-treino e minha recuperação melhorou demais.',
+                text: 'Gente, que receitas maravilhosas. Sempre faço depois que volto da academia. Agora, consigo manter o shape e mesmo assim comer o que eu gosto!',
                 likes: 34,
-                image: 'https://i.pravatar.cc/150?img=12'
+                image: 'https://i.imgur.com/WYQzh7dm.png'
               },
               {
                 name: 'Ana Costa',
                 time: '1d',
-                text: 'Os molhos fit são sensacionais! Minha família nem percebe que é saudável. Ganhei massa sem abrir mão do que eu amo comer 💪',
+                text: 'Os molhos fit são divinos. O pessoal aqui de casa nem consegue perceber que é fitness!',
                 likes: 45,
-                image: 'https://i.pravatar.cc/150?img=9'
+                image: 'https://i.imgur.com/puEFIXym.png'
               },
               {
                 name: 'Carlos Oliveira',
                 time: '1d',
-                text: 'Trabalho o dia inteiro e sempre pedia delivery de macarrão cheio de gordura. Agora faço meu meal prep no domingo e levo minha marmita fit a semana toda.',
+                text: 'Eu e minha esposa sempre pediamos iFood, mas agora consigo fazer tudo em casa tranquilamente.',
                 likes: 28,
-                image: 'https://i.pravatar.cc/150?img=11'
-              },
-              {
-                name: 'Lucia Ferreira',
-                time: '2d',
-                text: 'Comprei ontem e já fiz 3 receitas diferentes! Meu marido amou e nem acreditou que era fit. Recomendo demais gente, pode confiar, vale muito a pena! 😊',
-                likes: 52,
-                image: 'https://i.pravatar.cc/150?img=16'
+                image: 'https://i.imgur.com/BYtNZ6Sm.png'
               }
             ].map((testimonial, idx) => (
               <div key={idx} className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow">
@@ -615,7 +514,7 @@ export default function PastaFitLanding() {
             Não Perca Esta Oportunidade!
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Comece hoje a transformar suas refeições e seu corpo com receitas de macarrão fit deliciosas e práticas
+            Comece hoje a transformar suas refeições e seu corpo com receitas de massas fit deliciosas e práticas
           </p>
           <button
             onClick={scrollToOffer}
@@ -632,7 +531,7 @@ export default function PastaFitLanding() {
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-400 py-8">
         <div className="container mx-auto px-4 text-center">
-          <p className="font-bold text-lg text-white mb-2">💪 150 Receitas de Macarrão Fit</p>
+          <p className="font-bold text-lg text-white mb-2">💪 150 Receitas de Massas Fit</p>
           <p className="text-sm">Todos os direitos reservados – 2026</p>
         </div>
       </footer>
