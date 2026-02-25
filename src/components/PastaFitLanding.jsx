@@ -113,31 +113,9 @@ export default function PastaFitLanding() {
         .floating {
           animation: float 2s ease-in-out infinite;
         }
-        @keyframes gradientMove {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
-        .animated-gradient {
-          background: linear-gradient(90deg, #22c55e, #f97316, #22c55e, #f97316);
-          background-size: 300% 100%;
-          animation: gradientMove 3s ease infinite;
-        }
-        .animated-gradient:hover {
-          background: linear-gradient(90deg, #16a34a, #ea580c, #16a34a, #ea580c);
-          background-size: 300% 100%;
-        }
-        .animated-gradient-text {
-          background: linear-gradient(90deg, #22c55e, #f97316, #22c55e, #f97316);
-          background-size: 300% 100%;
-          -webkit-background-clip: text;
-          background-clip: text;
-          -webkit-text-fill-color: transparent;
-          animation: gradientMove 3s ease infinite;
-        }
       `}</style>
       {/* Promo Banner */}
-      <div className="bg-gradient-to-r from-orange-500 to-orange-400 text-white py-3 px-4 text-center font-bold">
+      <div className="bg-terracotta text-white py-3 px-4 text-center font-bold">
         <span className="text-sm md:text-base">
           🔥 Essa promoção acaba <span className="text-yellow-300">hoje</span> - {formattedDate}
         </span>
@@ -146,7 +124,7 @@ export default function PastaFitLanding() {
       {/* Hero Section */}
       <header className="container mx-auto px-4 py-4 md:py-6 text-center">
         <div className="max-w-2xl mx-auto">
-          <h1 className="text-2xl md:text-4xl animated-gradient-text font-bold py-1 mb-8">
+          <h1 className="text-2xl md:text-4xl text-terracotta font-bold py-1 mb-8">
             150 RECEITAS DE MASSAS FITNESS<br />
             <span className="text-xl md:text-3xl">Todas em um único aplicativo</span>
           </h1>
@@ -160,7 +138,7 @@ export default function PastaFitLanding() {
             />
           </div>
 
-          <p className="text-lg md:text-lg text-orange-700 font-bold mb-3">
+          <p className="text-lg md:text-lg text-terracotta font-bold mb-3">
             Todas as receitas tem fotos, informações nutricionais e<br />
             Modo de Preparo COMPLETO!
           </p>
@@ -177,7 +155,7 @@ export default function PastaFitLanding() {
           {/* CTA Button */}
           <button
             onClick={scrollToOffer}
-            className="w-full max-w-md mx-auto animated-gradient text-white font-bold py-3 px-6 rounded-full text-base md:text-lg transition-transform transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
+            className="w-full max-w-md mx-auto bg-olive text-white font-bold py-3 px-6 rounded-full text-base md:text-lg transition-transform transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
           >
             <span>🔥</span>
             SIM! QUERO GARANTIR MEU ACESSO AGORA!
@@ -188,7 +166,7 @@ export default function PastaFitLanding() {
       {/* Benefits & App Screens Section */}
       <section className="py-10 md:py-16 bg-white overflow-hidden">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 animated-gradient-text">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-terracotta">
             Conheça o Nosso Aplicativo
           </h2>
 
@@ -238,7 +216,7 @@ export default function PastaFitLanding() {
                   key={idx}
                   onClick={() => setCurrentSlide(idx)}
                   className={`w-3 h-3 rounded-full transition-colors ${
-                    currentSlide === idx ? 'bg-orange-500' : 'bg-gray-300'
+                    currentSlide === idx ? 'bg-terracotta' : 'bg-gray-300'
                   }`}
                 />
               ))}
@@ -248,20 +226,20 @@ export default function PastaFitLanding() {
           {/* CTA Section */}
           <div className="text-center mb-16 px-4">
             <p className="text-xl md:text-2xl text-gray-800 font-medium mb-8 max-w-2xl mx-auto leading-relaxed">
-              Ainda <span className="text-orange-600 font-bold">HOJE</span> você vai conseguir preparar massas deliciosas e que cabem na sua dieta alimentar. <br /><span className="text-orange-600 font-bold">Chega de dietas malucas!</span>
+              Ainda <span className="text-terracotta font-bold">HOJE</span> você vai conseguir preparar massas deliciosas e que cabem na sua dieta alimentar. <br /><span className="text-terracotta font-bold">Chega de dietas malucas!</span>
             </p>
             <button
               onClick={scrollToOffer}
-              className="w-full max-w-md mx-auto animated-gradient text-white font-bold py-5 px-8 rounded-full text-xl transition-transform transform hover:scale-105 shadow-xl flex items-center justify-center gap-2"
+              className="w-full max-w-md mx-auto bg-olive text-white font-bold py-5 px-8 rounded-full text-xl transition-transform transform hover:scale-105 shadow-xl flex items-center justify-center gap-2"
             >
               QUERO O APLICATIVO
             </button>
           </div>
 
           {/* Guarantee Box */}
-          <div className="bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-400 rounded-2xl p-6 md:p-8 text-center shadow-lg">
+          <div className="bg-olive/5 border-2 border-olive rounded-2xl p-6 md:p-8 text-center shadow-lg">
             <div className="text-5xl mb-4">🛡️</div>
-            <h3 className="text-xl md:text-2xl font-bold text-green-700 mb-4">
+            <h3 className="text-xl md:text-2xl font-bold text-olive mb-4">
               ✅ GARANTIA INCONDICIONAL DE 7 DIAS
             </h3>
             <p className="text-gray-700 mb-4 leading-relaxed">
@@ -270,7 +248,7 @@ export default function PastaFitLanding() {
             <p className="text-gray-600 mb-4">
               Sem perguntas. Sem burocracia. Sem complicação.
             </p>
-            <p className="text-green-600 font-bold text-lg">
+            <p className="text-olive font-bold text-lg">
               O risco é TODO NOSSO! Você não tem nada a perder.
             </p>
           </div>
@@ -278,11 +256,11 @@ export default function PastaFitLanding() {
       </section>
 
       {/* Why Our App Section (Comparison) */}
-      <section className="py-12 md:py-20 bg-gradient-to-b from-orange-50 to-white">
+      <section className="py-12 md:py-20 bg-terracotta/5">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 leading-tight">
             Por que nosso Aplicativo é<br />
-            <span className="text-orange-500">Diferente de Tudo</span><br />
+            <span className="text-terracotta">Diferente de Tudo</span><br />
             que você já viu?
           </h2>
 
@@ -310,10 +288,10 @@ export default function PastaFitLanding() {
 
             {/* Our App column */}
             <div className="bg-white p-8 rounded-3xl shadow-2xl border-4 border-orange-400 transform md:scale-105 z-10 relative overflow-hidden">
-              <div className="absolute top-0 right-0 bg-orange-400 px-4 py-1 rounded-bl-xl text-white text-xs font-bold uppercase tracking-wider">
+              <div className="absolute top-0 right-0 bg-terracotta px-4 py-1 rounded-bl-xl text-white text-xs font-bold uppercase tracking-wider">
                 Exclusivo
               </div>
-              <h3 className="text-2xl font-black mb-6 animated-gradient-text flex items-center gap-2">
+              <h3 className="text-2xl font-black mb-6 text-terracotta flex items-center gap-2">
                 <span>✅</span> O Nosso Aplicativo
               </h3>
               <ul className="space-y-5">
@@ -326,7 +304,7 @@ export default function PastaFitLanding() {
                   'Acesso vitalício no seu celular'
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                    <Check className="w-5 h-5 text-olive mt-1 flex-shrink-0" />
                     <span className="text-gray-800 font-bold leading-tight">{item}</span>
                   </li>
                 ))}
@@ -337,7 +315,7 @@ export default function PastaFitLanding() {
           <div className="mt-16 text-center">
             <button
               onClick={scrollToOffer}
-              className="w-full max-w-md mx-auto animated-gradient text-white font-bold py-5 px-10 rounded-full text-xl transition-transform transform hover:scale-105 shadow-2xl flex items-center justify-center gap-3"
+              className="w-full max-w-md mx-auto bg-olive text-white font-bold py-5 px-10 rounded-full text-xl transition-transform transform hover:scale-105 shadow-2xl flex items-center justify-center gap-3"
             >
               🚀 QUERO TER ACESSO A TUDO ISSO AGORA!
             </button>
@@ -350,7 +328,7 @@ export default function PastaFitLanding() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-black mb-6 text-gray-900 leading-tight">
-              A Diferença é <span className="text-orange-500 italic">Gritante</span>
+              A Diferença é <span className="text-terracotta italic">Gritante</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Arraste o slider abaixo para comparar a qualidade de um e-book comum com o que você encontrará no nosso aplicativo.
@@ -371,7 +349,7 @@ export default function PastaFitLanding() {
             <div className="absolute top-4 left-4 bg-gray-800/90 text-white px-4 py-1 rounded-full text-[10px] md:text-xs font-bold shadow-lg z-40 pointer-events-none uppercase tracking-wider">
               E-BOOKS COMUNS
             </div>
-            <div className="absolute bottom-4 right-4 bg-green-500 text-white px-4 py-1 rounded-full text-[10px] md:text-xs font-bold shadow-lg z-40 pointer-events-none uppercase tracking-wider">
+            <div className="absolute bottom-4 right-4 bg-olive text-white px-4 py-1 rounded-full text-[10px] md:text-xs font-bold shadow-lg z-40 pointer-events-none uppercase tracking-wider">
               NOSSO APP (150 RECEITAS)
             </div>
 
@@ -403,10 +381,10 @@ export default function PastaFitLanding() {
               className="absolute top-0 bottom-0 z-30 w-1 bg-white shadow-[0_0_15px_rgba(0,0,0,0.5)] flex items-center justify-center pointer-events-none"
               style={{ left: `${sliderPosition}%` }}
             >
-              <div className="w-12 h-12 bg-white rounded-full shadow-2xl flex items-center justify-center -ml-0.5 border-4 border-orange-500">
+              <div className="w-12 h-12 bg-white rounded-full shadow-2xl flex items-center justify-center -ml-0.5 border-4 border-olive">
                 <div className="flex gap-0.5">
-                   <ChevronLeft className="w-5 h-5 text-orange-500 -mr-1" />
-                   <ChevronRight className="w-5 h-5 text-orange-500" />
+                   <ChevronLeft className="w-5 h-5 text-olive -mr-1" />
+                   <ChevronRight className="w-5 h-5 text-olive" />
                 </div>
               </div>
             </div>
@@ -418,7 +396,7 @@ export default function PastaFitLanding() {
                E-books Genéricos (Texto)
              </div>
              <div className="flex items-center gap-2">
-               <span className="w-4 h-4 rounded-full bg-orange-500 shadow-md"></span>
+               <span className="w-4 h-4 rounded-full bg-olive shadow-md"></span>
                Nosso Aplicativo (Interativo)
              </div>
           </div>
@@ -428,7 +406,7 @@ export default function PastaFitLanding() {
       {/* Recipes Preview Section */}
       <section className="py-12 md:py-16 bg-white">
         <div className="container mx-auto px-4 max-w-2xl">
-          <h2 className="text-3xl md:text-3xl font-bold text-center mb-8 animated-gradient-text">
+          <h2 className="text-3xl md:text-3xl font-bold text-center mb-8 text-terracotta">
             Olha algumas das receitas que temos<br />em nosso aplicativo:
           </h2>
 
@@ -451,7 +429,7 @@ export default function PastaFitLanding() {
                 />
                 <div className="p-3 text-center">
                   <h3 className="font-bold text-sm text-gray-800 mb-2 leading-tight">{recipe.name}</h3>
-                  <div className="flex items-center justify-center gap-1 text-orange-500">
+                  <div className="flex items-center justify-center gap-1 text-terracotta">
                     <span>🔥</span>
                     <span className="font-bold text-sm">{recipe.cal} calorias</span>
                   </div>
@@ -464,7 +442,7 @@ export default function PastaFitLanding() {
           <div className="text-center">
             <button
               onClick={scrollToOffer}
-              className="w-full max-w-md mx-auto animated-gradient text-white font-bold py-4 px-8 rounded-full text-lg transition-transform transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
+              className="w-full max-w-md mx-auto bg-olive text-white font-bold py-4 px-8 rounded-full text-lg transition-transform transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
             >
               🍝 QUERO COMER MASSAS SEM CULPA!
             </button>
@@ -475,7 +453,7 @@ export default function PastaFitLanding() {
       {/* Bonuses Section */}
       <section className="py-12 md:py-20 bg-gradient-to-b from-yellow-100 to-yellow-50 overflow-hidden">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-black text-center mb-10 animated-gradient-text uppercase tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-black text-center mb-10 text-terracotta uppercase tracking-tight">
             Bônus Exclusivos Para Você:
           </h2>
 
@@ -495,7 +473,7 @@ export default function PastaFitLanding() {
                     />
                     {/* Caption Overlay */}
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-8 pt-12">
-                       <div className="bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full w-fit mb-2">GRÁTIS HOJE</div>
+                       <div className="bg-olive text-white text-[10px] font-bold px-2 py-0.5 rounded-full w-fit mb-2">GRÁTIS HOJE</div>
                        <h3 className="text-white font-black text-xl mb-1">{bonus.title}</h3>
                        <p className="text-gray-200 text-sm leading-tight">{bonus.description}</p>
                     </div>
@@ -536,7 +514,7 @@ export default function PastaFitLanding() {
           <div className="text-center">
             <button
               onClick={scrollToOffer}
-              className="w-full max-w-md mx-auto animated-gradient text-white font-bold py-5 px-8 rounded-full text-xl transition-transform transform hover:scale-105 shadow-2xl flex items-center justify-center gap-2"
+              className="w-full max-w-md mx-auto bg-olive text-white font-bold py-5 px-8 rounded-full text-xl transition-transform transform hover:scale-105 shadow-2xl flex items-center justify-center gap-2"
             >
               🎁 SIM! QUERO TODOS OS BÔNUS GRÁTIS!
             </button>
@@ -551,16 +529,16 @@ export default function PastaFitLanding() {
       {/* Offers Section */}
       <section id="offers" className="py-16 md:py-24 bg-gradient-to-b from-yellow-100 to-yellow-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-orange-500">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-terracotta">
             Garanta Seu Acesso Agora:
           </h2>
 
           <div className="max-w-xl mx-auto">
             {/* Complete Offer - Single Column */}
-            <div className="bg-gradient-to-br from-orange-500 to-red-500 rounded-3xl shadow-2xl p-6 md:p-8 transform hover:scale-[1.02] transition-all border-4 border-yellow-400 relative">
+            <div className="bg-terracotta rounded-3xl shadow-2xl p-6 md:p-8 transform hover:scale-[1.02] transition-all border-4 border-olive relative">
               {/* Popular Badge */}
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <span className="bg-yellow-400 text-gray-900 px-4 py-1.5 rounded-full text-sm font-bold shadow-lg">
+                <span className="bg-olive text-white px-4 py-1.5 rounded-full text-sm font-bold shadow-lg">
                   ⭐ OFERTA COMPLETA
                 </span>
               </div>
@@ -591,14 +569,14 @@ export default function PastaFitLanding() {
                   <span className="bg-red-600 text-white px-3 py-1 rounded-full font-bold text-sm">-86%</span>
                 </div>
                 <div className="flex items-baseline justify-center gap-1">
-                  <span className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600 floating">R$29,90</span>
+                  <span className="text-4xl md:text-5xl font-black text-terracotta floating">R$29,90</span>
                 </div>
                 <p className="text-gray-500 text-sm mt-2">Pagamento único</p>
               </div>
 
               <a
                 href={'https://pay.cakto.com.br/qrqqwmj_745141' + window.location.search}
-                className="w-full animated-gradient text-white font-bold py-4 px-6 rounded-full text-base md:text-lg transition-all shadow-lg mb-4 flex items-center justify-center"
+                className="w-full bg-olive text-white font-bold py-4 px-6 rounded-full text-base md:text-lg transition-all shadow-lg mb-4 flex items-center justify-center"
               >
                 COMPRAR AGORA!
               </a>
@@ -622,7 +600,7 @@ export default function PastaFitLanding() {
       {/* Testimonials Section */}
       <section className="py-12 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-5xl">
-          <h2 className="text-2xl md:text-5xl font-bold text-center mb-12 animated-gradient-text">
+          <h2 className="text-2xl md:text-5xl font-bold text-center mb-12 text-terracotta">
             Depoimentos de quem comprou
           </h2>
 
@@ -693,7 +671,7 @@ export default function PastaFitLanding() {
           <div className="text-center mt-12">
             <button
               onClick={scrollToOffer}
-              className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-12 rounded-full text-xl transition-all transform hover:scale-105 shadow-lg"
+              className="bg-olive text-white font-bold py-4 px-12 rounded-full text-xl transition-all transform hover:scale-105 shadow-lg"
             >
               ⭐ EU TAMBÉM QUERO TRANSFORMAR MINHA DIETA!
             </button>
@@ -738,7 +716,7 @@ export default function PastaFitLanding() {
             ].map((faq, idx) => (
               <div key={idx} className="bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition-colors">
                 <div className="flex gap-4 items-start">
-                  <div className="text-orange-600 flex-shrink-0">
+                  <div className="text-olive flex-shrink-0">
                     {typeof faq.icon === 'string' ? <span className="text-2xl">{faq.icon}</span> : faq.icon}
                   </div>
                   <div>
@@ -753,7 +731,7 @@ export default function PastaFitLanding() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-r from-orange-600 to-red-600 text-white">
+      <section className="py-16 md:py-20 bg-terracotta text-white">
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Não Perca Esta Oportunidade!
@@ -763,7 +741,7 @@ export default function PastaFitLanding() {
           </p>
           <button
             onClick={scrollToOffer}
-            className="bg-white text-orange-600 hover:bg-gray-100 font-bold py-5 px-16 rounded-full text-2xl transition-all transform hover:scale-105 shadow-2xl"
+            className="bg-white text-terracotta hover:bg-gray-100 font-bold py-5 px-16 rounded-full text-2xl transition-all transform hover:scale-105 shadow-2xl"
           >
             ⚡ GARANTIR MEU DESCONTO AGORA!
           </button>
